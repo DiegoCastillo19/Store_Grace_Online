@@ -1,0 +1,237 @@
+/* Cargar fuentes desde el HTML */
+/* <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> */
+
+/* CSS RESET */
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navegación y header */
+header {
+    width: 100%;
+    height: 70vh;
+    background-image: url(imagenes/bg-01.2.3.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+}
+
+nav {
+    height: 100px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 80px;
+    margin-left: 20px;
+}
+
+.bar-btn {
+    font-size: 20px;
+    color: #ffffff;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.nav-menu {
+    position: fixed;
+    width: 100%;
+    height: 0;
+    top: 100px;
+    background: rgba(134, 28, 111, 0.793);
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.nav-menu li {
+    display: none;
+    line-height: 30px;
+    margin: 20px 0;
+    transition: all 0.5s;
+}
+
+.nav-menu li a {
+    color: #dde1e6;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.nav-menu li a.active, .nav-menu li a:hover {
+    color: rgba(245, 239, 239, 0.712);
+    transition: 0.3s;
+}
+
+#check {
+    display: none;
+}
+
+#check:checked ~ .nav-menu {
+    height: 100vh;
+}
+
+#check:checked ~ .nav-menu li {
+    display: block;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+.banner-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.text-header {
+    margin-right: 0;
+}
+
+.text-header h1 {
+    text-transform: uppercase;
+    color: #fdfdfd;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.text-header p {
+    color: #fefefe;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.btn-a {
+    display: inline-block;
+    margin: 20px 0;
+    padding: 10px 20px;
+    border: 2px solid #cf09f7;
+    border-radius: 25px;
+    color: #fff;
+}
+
+.btn-a:hover {
+    background-color: #da08da91;
+}
+
+.img-header {
+    margin-right: 0;
+    margin-top: 20px;
+}
+
+.img-header img {
+    width: 150px; /* LogoPrincipal */
+}
+
+@media (min-width: 768px) {
+    .logo {
+        margin-left: 0;
+    }
+    header {
+        height: 70vh;
+    }
+    nav {
+        height: 100px;
+        margin: 0 auto;
+    }
+    .bar-btn {
+        display: none;
+    }
+    .nav-menu {
+        position: relative;
+        height: 100px;
+        top: 0;
+        background: none;
+        transition: none;
+        text-align: right;
+        margin-right: 20px;
+    }
+
+    .nav-menu li {
+        display: inline-block;
+        line-height: 100px;
+        margin: 0 20px;
+    }
+
+    .nav-menu li a {
+        font-size: 14px;
+    }
+
+    .banner-text {
+        flex-direction: row;
+        margin-top: 20px;
+        text-align: left;
+    }
+
+    .text-header {
+        margin-right: 20px;
+    }
+
+    .text-header h1 {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    .text-header p {
+        margin-top: 20px;
+    }
+
+    .btn-a {
+        margin-top: 20px;
+    }
+
+    .img-header {
+        margin-right: 20px;
+        margin-top: 0;
+    }
+
+    .img-header img {
+        width: 250px;
+    }
+}
+
+/* Nosotros */
+.about {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.icons-about {
+    display: flex; /* Cambiar a flex para mostrar los iconos en línea */
+    align-items: center; /* Alinear los elementos verticalmente */
+    margin-top: 50px;
+}
+
+.icon-about {
+    display: flex; /* Mostrar iconos horizontalmente */
+    margin: 20px 20px; /* Espacio entre los iconos */
+}
+
+.icon-about img {
+    width: 70px; /* Mantener el tamaño original de las imágenes */
+}
+
+.icon-text {
+    text-align: left;
+    margin-left: 15px;
+}
+
+.icon-text p {
+    margin: 0;
+}
+
