@@ -417,6 +417,8 @@ nav {
     margin-bottom: 20px;
 }
 
+
+
 @media (min-width: 768px) {
 
     .portfolio {
@@ -441,17 +443,53 @@ nav {
     .img-01 {
         margin-right: 50px;
         width: 300px;
+        border-radius: 30px;
+
+        height: 300px;
+        width: 600px;
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
     }
-    
+
+    .img-01:hover{
+        height: 400px;
+        width: 800px;
+        margin-left: -50px;
+    }
+
     .img-02 {
         margin-left: 50px;
         width: 350px;
+        border-radius: 30px;
+
+        margin-right: 50px;
+        width: 300px;
+        border-radius: 30px;
+
+        height: 300px;
+        width: 600px;
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
     }
-    
+
+    .img-02:hover{
+        height: 400px;
+        width: 700px;
+        margin-left: -50px;
+    }
+   
     .img-03 {
         margin-left: 50px;
         width: 350px;
     }
+    
+    
+}
+
+@media (min-width: 768px) {
+    
 }
 
 
